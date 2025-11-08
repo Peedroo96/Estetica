@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header style={{ 
@@ -11,10 +13,11 @@ export default function Header() {
     }}>
       <h2 style={{ color: "var(--accent)" }}>PedroHenrique.dev</h2>
       <nav style={{ display: "flex", gap: "30px" }}>
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+        <Link to="/">Home</Link>
+        <Link to="/sobre">Sobre</Link>
+        <Link to="/habilidades">Habilidades</Link>
+        <Link to="/projetos">Projetos</Link>
+        <Link to="/contato">Contato</Link>
       </nav>
     </header>
   );
