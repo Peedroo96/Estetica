@@ -1,28 +1,30 @@
-
-
 :root {
-  --bg: #0d0d0d;
-  --text: #ffffff;
-  --text-secondary: #9ca3af;
-  --accent: #3b82f6;
+  --bg-color: #0a0a0f;
+  --text-color: #e0e0ff;
+  --accent: #6b5bff;
+  --accent2: #00d4ff;
+  --text-secondary: #aaa;
+  --font-primary: 'Poppins', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-  opacity: 0.7;
+  color: var(--accent2);
+  text-shadow: 0 0 6px var(--accent2);
 }
 
-section {
-  padding: 80px 20px;
+h1, h2, h3 {
+  margin: 0;
 }
